@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Médica de Emergencia - SICADEL / SITDIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --rojo: #dc2626;
+      --bg: #f8fafc;
+      --text: #1e293b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 15px; }
+    
+    .card-emergency {
+      max-width: 480px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border: 2px solid var(--rojo);
+    }
+    
+    .header-alert {
+      background: var(--rojo);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .profile-header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #e2e8f0;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: #64748b;
+    }
+    
+    .badge-lsm {
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-top: 5px;
+    }
+
+    .info-section { padding: 20px; }
+    .info-group { margin-bottom: 15px; }
+    .info-label { font-size: 0.8rem; color: #64748b; text-transform: uppercase; font-weight: 600; }
+    .info-value { font-size: 1rem; font-weight: 600; color: #0f172a; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .btn-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: #16a34a;
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      background: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-emergency">
+    <div class="header-alert">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      FICHA MÉDICA DE EMERGENCIA
+    </div>
+
+    <div class="profile-header">
+      <div class="avatar"><i class="fa-solid fa-user"></i></div>
+      <h2>Juan Carlos Pérez</h2>
+      <span class="badge-lsm"><i class="fa-solid fa-hands"></i> Usuario Sordo / LSM</span>
+    </div>
+
+    <div class="info-section">
+      <div class="grid-2">
+        <div class="info-group">
+          <div class="info-label">Tipo de Sangre</div>
+          <div class="info-value" style="color: var(--rojo);">O Positive (O+)</div>
+        </div>
+        <div class="info-group">
+          <div class="info-label">Edad</div>
+          <div class="info-value">24 Años</div>
+        </div>
+      </div>
+
+      <div class="info-group">
+        <div class="info-label">Condición / Discapacidad</div>
+        <div class="info-value">Discapacidad Auditiva (Sordera Profunda)</div>
+      </div>
+
+      <div class="info-group">
+        <div class="info-label">Alergias Médicas</div>
+        <div class="info-value">Penicilina / Sulfa</div>
+      </div>
+
+      <div class="info-group">
+        <div class="info-label">Contacto de Emergencia 1</div>
+        <div class="info-value">María Pérez (Madre)</div>
+        <a href="tel:8334312111" class="btn-call"><i class="fa-solid fa-phone"></i> Llamar a Familiar</a>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Sistema de Emergencia Físico-Digital | <strong>SICADEL / SITDIA 2026</strong>
+    </div>
+  </div>
+
+</body>
+</html>
